@@ -1,0 +1,56 @@
+body {
+    background: #122409;
+    color: #ebe3e3;
+    justify-content: center;
+    text-align: center;
+}
+
+.circle1{
+    position: relative;
+    left: 42rem;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background: #0dbb16;
+    border-radius: 50%;
+}
+
+.circle1:hover {
+
+    background: #1b9fc7;
+    transition: 2s;
+}
+
+a {
+    position: absolute;
+    color: whitesmoke;
+    left: 15rem;
+}
+
+.text {
+    position: absolute;
+    top: 55rem;
+    left: 53rem;
+}
+
+h1 {
+    animation: pojavi 4s ease-in;
+}
+
+.weight input[type=button]:hover{
+    background: #a3a30c;
+}
+
+.distance input[type=button]:hover {
+    background: #0c8088;
+}
+
+@keyframes pojavi {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

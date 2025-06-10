@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_imperial.css">
+    <script src="js/index_imperial.js" defer></script>
+    <title>Converter</title>
+</head>
+<body>
+    <header>
+        <h1>Imperial system</h1>
+    </header>
+    <main>
+            <div class="container">
+                <h2 class="container__weight">Weight</h2>
+                <div class="weight">
+                    <label for="text">Type in pounds:</label>
+                    <input type="text" name="number" id="numberp">
+                    <input type="button" id="convertKg" value="Convert to kilograms" onclick="pounds()">
+                    <label for="option">Results in Kg:</label>
+                    <p id="resultKgi">0</p>
+                    <br>
+                    <label for="text">Type in kilograms:</label>
+                    <input type="text" name="number" id="numberKilo">
+                    <input type="button" id="convertLb" value="Convert to pounds" onclick="kgToLb()">
+                    <label for="option">Results in Lb:</label>
+                    <p id="resultLb">0</p>
+                </div>
+                <h2>Distance</h2>
+                <div class="distance">
+                    <label for="text">Type in centimetres:</label>
+                    <input type="text" name="number" id="numberCmi">
+                    <input type="button" id="convertIn" value="Convert to inches" onclick="inches()">
+                    <label for="option">Results in inches:</label>
+                    <p id="resultIn">0</p>
+                    <br>
+                    <label for="text">Type in centimetres:</label>
+                    <input type="text" name="number" id="numberCen">
+                    <input type="button" id="convertDm" value="Convert to feets" onclick="feet()">
+                    <label for="option">Results in ft:</label>
+                    <p id="resultFt">0</p>
+                    <br>
+                    <label for="text">Type in centimetres:</label>
+                    <input type="text" name="number" id="numberCent">
+                    <input type="button" id="convertCm" value="Convert to yards" onclick="yards()">
+                    <label for="option">Results in yd:</label>
+                    <p id="resultYd">0</p>
+                    <br>
+                    <label for="text">Type in kilometers:</label>
+                    <input type="text" name="number" id="numberKmi">
+                    <input type="button" id="convertMm" value="Convert to miles" onclick="miles()">
+                    <label for="option">Results in mi:</label>
+                    <p id="resultMi">0</p>
+                    <br>
+                    <label for="text">Type in miles:</label>
+                    <input type="text" name="number" id="numberMi">
+                    <input type="button" id="convertMm" value="Convert to kilometers" onclick="miToKm()">
+                    <label for="option">Results in km:</label>
+                    <p id="resultKm">0</p>
+                </div>
+            </div>
+    </main>
+        <a href="index.html"><div class="circle1"></div></a>
+        <p class="text">Press this button for metric system</p>
+</body>
+</html>

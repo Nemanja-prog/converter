@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_metric.css">
+    <script src="js/index_metric.js" defer></script>
+    <title>Converter</title>
+</head>
+<body>
+    <header>
+        <h1>Metric system</h1>
+    </header>
+    <main>
+        <div class="container">
+        <h2>Weight</h2>
+        <div class="weight">
+            <label for="text">Type in grams:</label>
+            <input type="text" name="number" id="numberg">
+            <input type="button" id="convertKg" value="Convert to kilograms" onclick="kilogram()">
+            <label for="option">Results in Kg:</label>
+            <p id="resultKg">0</p>
+            <br>
+            <label for="text">Type in grams:</label>
+            <input type="text" name="number" id="numberMg">
+            <input type="button" id="convertMg" value="Convert to milligrams" onclick="milligram()">
+            <label for="option">Results in Mg:</label>
+            <p id="resultMg">0</p>
+            <br>
+            <label for="text">Type in kilograms:</label>
+            <input type="text" name="number" id="numberKg">
+            <input type="button" id="convertMt" value="Convert to metric-tone" onclick="metricTone()">
+            <label for="option">Results in tones:</label>
+            <p id="resultMt">0</p>
+        </div>
+        <h2>Distance</h2>
+        <div class="distance">
+            <label for="text">Type in kilometers:</label>
+            <input type="text" name="number" id="numberKm">
+            <input type="button" id="convertKm" value="Convert to meters" onclick="kilometers()">
+            <label for="option">Results in m:</label>
+            <p id="resultKm">0</p>
+            <br>
+            <label for="text">Type in meters:</label>
+            <input type="text" name="number" id="numberDm">
+            <input type="button" id="convertDm" value="Convert to decimeters" onclick="decimeters()">
+            <label for="option">Results in Dm:</label>
+            <p id="resultDm">0</p>
+            <br>
+            <label for="text">Type in meters:</label>
+            <input type="text" name="number" id="numberCm">
+            <input type="button" id="convertCm" value="Convert to centimetres" onclick="centimetres()">
+            <label for="option">Results in Cm:</label>
+            <p id="resultCm">0</p>
+            <br>
+            <label for="text">Type in meters:</label>
+            <input type="text" name="number" id="numberMm">
+            <input type="button" id="convertMm" value="Convert to millimeters" onclick="millimeters()">
+            <label for="option">Results in Mm:</label>
+            <p id="resultMm">0</p>
+        </div>
+    </div>
+    </main>
+    <a href="imperial.html"><div class="circle"></div></a>
+    <p class="text">Press this button for imperial system</p>
+</body>
+</html>
+<!-- <option value="metric-tone">metric ton</option>
+            <option value="kilogram">kilogram</option>
+            <option value="milligram">milligram</option>
+            <option value="ounce">ounce</option>
+            <option value="pound">pound</option>
+            <option value="tone">tone</option> -->
