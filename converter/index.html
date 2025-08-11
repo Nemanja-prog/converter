@@ -4,71 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style_metric.css">
-    <script src="js/index_metric.js" defer></script>
-    <title>Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Pretvarač</title>
 </head>
 <body>
-    <header>
-        <h1>Metric system</h1>
-    </header>
-    <main>
-        <div class="container">
-        <h2>Weight</h2>
-        <div class="weight">
-            <label for="text">Type in grams:</label>
-            <input type="text" name="number" id="numberg">
-            <input type="button" id="convertKg" value="Convert to kilograms" onclick="kilogram()">
-            <label for="option">Results in Kg:</label>
-            <p id="resultKg">0</p>
-            <br>
-            <label for="text">Type in grams:</label>
-            <input type="text" name="number" id="numberMg">
-            <input type="button" id="convertMg" value="Convert to milligrams" onclick="milligram()">
-            <label for="option">Results in Mg:</label>
-            <p id="resultMg">0</p>
-            <br>
-            <label for="text">Type in kilograms:</label>
-            <input type="text" name="number" id="numberKg">
-            <input type="button" id="convertMt" value="Convert to metric-tone" onclick="metricTone()">
-            <label for="option">Results in tones:</label>
-            <p id="resultMt">0</p>
+    <div class="naslov">
+        <h1>Pretvarač</h1>
+    </div>
+    <div class="meni">
+        <nav>
+            <ul>
+                <li><a href="#duzina"> Dužina</a></li>
+                <li><a href="#tezina"> Težina</a></li>
+                <li><a href="#temperatura"> Temperatura</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <div class="duzina" id="duzina">
+        <h2>Dužina</h2>
+        <div class="kilometar">
+            <label for="kilometar">Unesite vrednost u metrima:</label><input type="text" name="kilometar" id="kilometar">
+            <button id="metarUKilo"  onclick="pretvaracUKilo()">Kliknite za kilometar</button>
+            <p id="rezultatKilo"></p>
         </div>
-        <h2>Distance</h2>
-        <div class="distance">
-            <label for="text">Type in kilometers:</label>
-            <input type="text" name="number" id="numberKm">
-            <input type="button" id="convertKm" value="Convert to meters" onclick="kilometers()">
-            <label for="option">Results in m:</label>
-            <p id="resultKm">0</p>
-            <br>
-            <label for="text">Type in meters:</label>
-            <input type="text" name="number" id="numberDm">
-            <input type="button" id="convertDm" value="Convert to decimeters" onclick="decimeters()">
-            <label for="option">Results in Dm:</label>
-            <p id="resultDm">0</p>
-            <br>
-            <label for="text">Type in meters:</label>
-            <input type="text" name="number" id="numberCm">
-            <input type="button" id="convertCm" value="Convert to centimetres" onclick="centimetres()">
-            <label for="option">Results in Cm:</label>
-            <p id="resultCm">0</p>
-            <br>
-            <label for="text">Type in meters:</label>
-            <input type="text" name="number" id="numberMm">
-            <input type="button" id="convertMm" value="Convert to millimeters" onclick="millimeters()">
-            <label for="option">Results in Mm:</label>
-            <p id="resultMm">0</p>
+        
+        <br>
+        <br>
+        <div class="decimetar">
+            <label for="decimetar">Unesite vrednost u metrima:</label><input type="text" name="decimetar" id="decimetar">
+            <button id="metarUDeci" onclick="pretvaracUDeci()">Kliknite za decimetar</button>
+            <p id="rezultatDeci"></p>
+        </div>
+        <br>
+        <br>
+        <div class="centimetar">
+            <label for="centimetar">Unesite vrednost u metrima:</label><input type="text" name="centimetar" id="centimetar">
+            <button id="metarUCenti" onclick="pretvaracUCenti()">Kiknite za centimetar</button>
+            <p id="rezultatCenti"></p>
+        </div>
+        <br>
+        <br>
+        <div class="milimetar">
+            <label for="milimetar">Unesite vrednost u metrima:</label><input type="text" name="milimetar" id="milimetar">
+            <button id="metarUMili" onclick="pretvaracUMili()">Kliknite za milimetar</button>
+            <p id="rezultatMilim"></p>
         </div>
     </div>
-    </main>
-    <a href="imperial.html"><div class="circle"></div></a>
-    <p class="text">Press this button for imperial system</p>
+    <br>
+    <div class="tezina" id="tezina">
+        <h2>Težina</h2>
+        <div class="tona">
+            <label for="tona">Unesite vrednost u kilogramima:</label><input type="text" name="tona" id="tona">
+            <button id="kiloUTona" onclick="pretvaracUTona()">Kliknite za tone</button>
+            <p id="rezultatTona"></p>
+        </div>
+        <br>
+        <br>
+        <div class="gram">
+            <label for="gram">Unesite vrednost u kilogramima:</label><input type="text" name="gram" id="gram">
+            <button id="kiloUGram" onclick="pretvaracUGram()">Kliknite za grame</button>
+            <p id="rezultatGram"></p>
+        </div>
+        <br>
+        <br>
+        <div class="miligram">
+            <label for="miligram">Unesite vrednost u kilogramima:</label><input type="text" name="miligram" id="miligram">
+            <button id="gramUMiligram" onclick="pretvaracUMilig()">Kliknite za miligram</button>
+            <p id="rezultatMilig"></p>
+        </div>
+    </div>
+    <br>
+    <div class="temperatura" id="temperatura">
+        <h2>Temperatura</h2>
+        <div class="farenhajt">
+            <label for="farenhajt">Unesite vrednost u celzijusima:</label><input type="text" name="farenhajt" id="farenhajt">
+            <button id="celzijusUFaren" onclick="pretvaracUFare()">Kliknite za farenhajte</button>
+            <p id="rezultatFare"></p>
+        </div>
+        <br>
+        <br>
+        <div class="kelvin">
+            <label for="kelvin">Unesite vrednost u celzijusima:</label><input type="text" name="kelvin" id="kelvin">
+            <button id="celzijusUKelvin" onclick="pretvaracUKelvin()">Kliknite za kelvine</button>
+            <p id="rezultatKelv"></p>
+        </div>
+    </div>
 </body>
 </html>
-<!-- <option value="metric-tone">metric ton</option>
-            <option value="kilogram">kilogram</option>
-            <option value="milligram">milligram</option>
-            <option value="ounce">ounce</option>
-            <option value="pound">pound</option>
-            <option value="tone">tone</option> -->
