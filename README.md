@@ -1,2 +1,2 @@
 # converter
-Site for converting distance and weight
+Site for converting distance, weight and temperature
