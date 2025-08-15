@@ -20,7 +20,7 @@ function pretvaracUKilo(){
 
     }
 
-    else if(regex.test(kilometar.value) === false){
+    else{
 
         kilometar.style.background = "#ff5858";
 
@@ -44,7 +44,7 @@ function pretvaracUDeci(){
         decimetar.style.background = "#ffffff";
     }
 
-    else if(regex.test(decimetar.value) === false){
+    else{
 
         decimetar.style.background = "#ff5858";
 
@@ -69,7 +69,7 @@ function pretvaracUCenti(){
         
     }
 
-    else if(regex.test(centimetar.value) === false){
+    else{
 
         centimetar.style.background = "#ff5858";
 
@@ -93,7 +93,7 @@ function pretvaracUMili(){
         milimetar.style.background = "#ffffff";
     }
 
-    else if(regex.test(milimetar.value) === false){
+    else{
         
         milimetar.style.background = "#ff5858";
 
@@ -119,7 +119,7 @@ function pretvaracUTona(){
 
     }
 
-    else if(regex.test(tona.value) === false){
+    else{
 
         tona.style.background = "#ff5858";
 
@@ -144,7 +144,7 @@ function pretvaracUGram(){
 
     }
 
-    else if(regex.test(gram.value) === false){
+    else{
 
         gram.style.background = "#ff5858";
 
@@ -169,7 +169,7 @@ function pretvaracUMilig(){
 
     }
 
-    else if(regex.test(miligram.value) === false){
+    else{
 
         miligram.style.background = "#ff5858";
 
@@ -196,7 +196,7 @@ function pretvaracUFare(){
 
     }
 
-    else if(regex.test(farenhajt.value) === false){
+    else{
 
         farenhajt.style.background = "#ff5858";
 
@@ -221,7 +221,7 @@ function pretvaracUKelvin(){
 
     }
 
-    else if(regex.test(kelvin.value) === false){
+    else{
 
         kelvin.style.background = "#ff5858";
 
