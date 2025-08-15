@@ -1,125 +1,280 @@
 *, *::before, *::after{
     margin: 0;
+
     padding: 0;
+
     box-sizing: content-box;
 }
 
-html{
+:root{
+
+    /*BODY*/
+
+    --GR_BODY: radial-gradient(#bfbfe0, #85b685);
+    
+    /*NASLOV*/
+
+    --MAR: 4rem;
+
+    --WIDTH_NASLOV: 65%;
+
+    --TA_NASLOV: center;
+
+    --FS_NASLOV: 1.7rem;
+
+    --COL_NASLOV: #1d248a;
+
+    /*MENI*/
+
+    --WIDTH_MENI: 85%;
+
+    --FS_MENI: 1.5rem;
+
+    --TA_MENI: left;
+
+    --BOR-WIDTH: 2px;
+    
+    --BOR-STYLE: solid;
+
+    --BOR-COL: #000000;
+
+    --TA_LI_MENI: center;
+
+    --PAD_LI: 0;
+
+    --GR_MENI: linear-gradient(#a7a3a3, #115e53);
+
+    --BORT-WIDTH: 2px;
+
+    --BORT-STYLE: solid;
+
+    --BORT-COL: #000000;
+
+    --TD_MENI: none;
+
+    --COL_MENI: #e9e9e9;
+    
+    --COL-VISITED_MENI: #c4c71a;
+    
+    --COL-HOVER_MENI: #41db22;
+    
+    --COL-ACTIVE_MENI: #e91b1b;
+
+    --DISPLAY-A_MENI: block;
+
+    --WIDTH-A_MENI: 100%;
+
+    --HEIGHT-A_MENI: 100%;
+
+    --PADD-A_MENI: 10px;
+
+    /*DUŽINA, TEŽINA, TEMPERATURA*/
+
+    --POS: relative;
+
+    --BORDTT-WIDTH: 3px;
+
+    --BORDTT-STYLE: solid;
+
+    --BORDTT-COL: #000000;
+
+    --DTT-WIDTH: 87%;
+
+    --DT-HEIGHT: 300px;
+
+    --DTT_COL: #1d248a;
+
+    /*TEMPERATURA VISINA*/
+
+    --T-HEIGHT: 180px;
+
+    /*POSITION DUŽINA, TEŽINA, TEMPERATURA*/
+
+    --POSDTT: absolute;
+
+    /*TOP*/
+
+    --TOP1: 30px;
+
+    --TOP2: 100px;
+
+    --TOP3: 170px;
+
+    --TOP4: 240px;
+
+    --TOP5: 60px;
+
+    --TOP6: 140px;
+
+    --TOP7: 220px;
+
+    --TOP8: 45px;
+
+    --TOP9: 119px;
+
+}
+
+body{
     scroll-behavior: smooth;
-    background: radial-gradient(#bfbfe0, #85b685);
+
+    background: var(--GR_BODY);
 }
 
 .naslov{
-    margin: 4rem;
-    width: 50%;
-    text-align: center;
-    font-size: 1.7rem;
-    color: #1d248a;
+    margin: var(--MAR);
+
+    width: var(--WIDTH_NASLOV);
+
+    text-align: var(--TA_NASLOV);
+
+    font-size: var(--FS_NASLOV);
+
+    color: var(--COL_NASLOV);
 }
 
 .meni{
-    width: 45%;
-    font-size: 1.5rem;
-    text-align: left;
-    border: 2px solid #000000;
+    width: var(--WIDTH_MENI);
+
+    font-size: var(--FS_MENI);
+
+    text-align: var(--TA_MENI);
+
+    border: var(--BOR-WIDTH) var(--BOR-STYLE) var(--BOR-COL);
 }
 
 .meni li{
-    text-align: center;
+    text-align: var(--TA_LI_MENI);
 
-    background: linear-gradient(#a7a3a3, #115e53);
+    padding: var(--PAD_LI);
+
+    background: var(--GR_MENI);
 }
 
 .meni li:nth-child(2){
-    border-top: 2px solid #000000;
-    border-bottom: 2px solid #000000;
+    border-top: var(--BORT-WIDTH) var(--BORT-STYLE) var(--BORT-COL);
+
+    border-bottom: var(--BORT-WIDTH) var(--BORT-STYLE) var(--BORT-COL);
 }
 
 li a{
-    text-decoration: none;
-    color: #e9e9e9
+    text-decoration: var(--TD_MENI);
+
+    color: var(--COL_MENI);
 }
 
 li a:visited {
-    text-decoration: none;
-    color:#c4c71a;
+    text-decoration: var(--TD_MENI);
+
+    color:var(--COL-VISITED_MENI);
 }
 
 li a:hover {
-    text-decoration: none;
-    color: #41db22;
+    text-decoration: var(--TD_MENI);
+
+    color: var(--COL-HOVER_MENI);
 }
 
 li a:active {
-    text-decoration: none;
-    color: #e91b1b;
+    text-decoration: var(--TD_MENI);
+
+    color: var(--COL-ACTIVE_MENI);
+}
+
+.meni a {
+    display: var(--DISPLAY-A_MENI);
+
+    width: var(--WIDTH-A_MENI);
+
+    height: var(--HEIGHT-A_MENI);
+
+    padding: var(--PADD-A_MENI);
 }
 
 .duzina{
-    position: relative;
-    border: 3px solid #000000;
-    width: 87%;
-    height: 300px;
-    color: #1d248a;
+    position: var(--POS);
+
+    border: var(--BORDTT-WIDTH) var(--BORDTT-STYLE) var(--BORDTT-COL);
+
+    width: var(--DTT-WIDTH);
+
+    height: var(--DT-HEIGHT);
+
+    color: var(--DTT_COL);
 }
 
 .duzina .kilometar{
-    position: absolute;
-    top: 30px;
+    position: var(--POSDTT);
+
+    top: var(--TOP1);
 }
 
 .duzina .decimetar {
-    position: absolute;
-    top: 100px;
+    position: var(--POSDTT);
+
+    top: var(--TOP2);
 }
 
 .duzina .centimetar {
-    position: absolute;
-    top: 170px;
+    position: var(--POSDTT);
+    top: var(--TOP3);
 }
 
 .duzina .milimetar {
-    position: absolute;
-    top: 240px;
+    position: var(--POSDTT);
+
+    top: var(--TOP4);
 }
 
 .tezina {
-    position: relative;
-    border: 3px solid #000000;
-    width: 87%;
-    height: 300px;
-    color: #1d248a;
+    position: var(--POS);
+
+    border: var(--BORDTT-WIDTH) var(--BORDTT-STYLE) var(--BORDTT-COL);
+
+    width: var(--DTT-WIDTH);
+
+    height: var(--DT-HEIGHT);
+
+    color: var(--DTT_COL);
 }
 
 .tezina .tona{
-    position:absolute;
-    top: 60px;
+    position:var(--POSDTT);
+
+    top: var(--TOP5);
 }
 
 .tezina .gram {
-    position: absolute;
-    top: 140px;
+    position: var(--POSDTT);
+
+    top: var(--TOP6);
 }
 
 .tezina .miligram {
-    position: absolute;
-    top: 220px;
+    position: var(--POSDTT);
+
+    top: var(--TOP7);
 }
 
 .temperatura {
-    position: relative;
-    border: 3px solid #000000;
-    width: 87%;
-    height: 180px;
-    color: #1d248a;
+    position: var(--POS);
+
+    border: var(--BORDTT-WIDTH) var(--BORDTT-STYLE) var(--BORDTT-COL);
+
+    width: var(--DTT-WIDTH);
+
+    height: var(--T-HEIGHT);
+    
+    color: var(--DTT_COL);
 }
 
 .temperatura .farenhajt{
-    position: absolute;
-    top: 45px;
+    position: var(--POSDTT);
+
+    top: var(--TOP8);
 } 
 
 .temperatura .kelvin {
-    position: absolute;
-    top: 119px;
+    position: var(--POSDTT);
+
+    top: var(--TOP9);
 }
