@@ -26,7 +26,7 @@
 
     /*MENI*/
 
-    --WIDTH_MENI: 85%;
+    --WIDTH_MENI: 87%;
 
     --FS_MENI: 1.5rem;
 
@@ -114,6 +114,53 @@
 
 }
 
+@keyframes appear_duzina{
+
+    0% {
+
+        left: -10000px;
+
+    }
+
+    100%{
+
+        left: 0;
+    }
+
+}
+
+@keyframes appear_tezina {
+
+    0% {
+
+        left: -10000px;
+
+    }
+
+    100% {
+
+        left: 0;
+
+    }
+
+}
+
+@keyframes appear_temperatura {
+
+    0% {
+
+        left: -10000px;
+
+    }
+
+    100% {
+
+        left: 0;
+
+    }
+
+}
+
 body{
     scroll-behavior: smooth;
 
@@ -130,6 +177,7 @@ body{
     font-size: var(--FS_NASLOV);
 
     color: var(--COL_NASLOV);
+    
 }
 
 .meni{
@@ -200,6 +248,8 @@ li a:active {
     height: var(--DT-HEIGHT);
 
     color: var(--DTT_COL);
+
+    animation: appear_duzina 4s normal ease-in-out;
 }
 
 .duzina .kilometar{
@@ -235,6 +285,8 @@ li a:active {
     height: var(--DT-HEIGHT);
 
     color: var(--DTT_COL);
+
+    animation: appear_tezina 4s normal  ease-in-out;
 }
 
 .tezina .tona{
@@ -265,6 +317,8 @@ li a:active {
     height: var(--T-HEIGHT);
     
     color: var(--DTT_COL);
+
+    animation: appear_temperatura 4s normal ease-in-out;
 }
 
 .temperatura .farenhajt{
