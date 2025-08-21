@@ -249,7 +249,7 @@ li a:active {
 
     color: var(--DTT_COL);
 
-    animation: appear_duzina 4s normal ease-in-out;
+    animation: appear_duzina 1s normal ease-in-out;
 }
 
 .duzina .kilometar{
@@ -286,7 +286,7 @@ li a:active {
 
     color: var(--DTT_COL);
 
-    animation: appear_tezina 4s normal  ease-in-out;
+    animation: appear_tezina 1s normal  ease-in-out;
 }
 
 .tezina .tona{
@@ -318,7 +318,7 @@ li a:active {
     
     color: var(--DTT_COL);
 
-    animation: appear_temperatura 4s normal ease-in-out;
+    animation: appear_temperatura 1s normal ease-in-out;
 }
 
 .temperatura .farenhajt{
@@ -332,3 +332,4 @@ li a:active {
 
     top: var(--TOP9);
 }
+
